@@ -1,0 +1,248 @@
+/* ------------------- Google fonts ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+* {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;   
+}
+
+body{
+    background: #e0e7eb;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Inicial{
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.Inicial .Left{
+    width: 35%;
+    background: #E4C1F9;
+}
+
+.Inicial .Left .Imagen{
+    width: 100%;
+}
+
+.Inicial .Left .Imagen img{
+    width: 100%;
+    display: block;
+}
+
+.Inicial .resume_title{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.Inicial .Left .resume_info{
+    color: black;
+}
+
+.Inicial .Left .resume_bottom{
+    padding: 20px 30px;
+}
+
+.Inicial .resume_item{
+    padding: 20px 0;
+    border-bottom: 1px solid #0174b2;
+}
+
+.Inicial .resumen_item:last-child{
+    border-bottom: 0px;
+}
+
+
+.Inicial .resume_namerole .name{
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+
+.Inicial .Left .resume_namerole .role{
+    color: #84838b;
+}
+
+.Inicial .Left .resume_namerole .resume_contact .resume_info:last-child{
+    margin-top: 10px;
+
+}
+
+.Inicial .Left .resume_namerole .resume_contact .resume_subtitle{
+    color: black;
+    margin-bottom: 2px;
+}
+
+.Inicial .Left .resume_skills .skills_list{
+    display: contents;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.Inicial .Left .resume_skills .skills_list .skills_bar{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.Inicial .Left .resume_skills .skills_list .skills_bar section{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;   
+}
+
+.Inicial .Left .resume_language .skills_list .skills_bar{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.Inicial .Left .resume_language .skills_list .skills_bar section{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;   
+}
+
+.Inicial .Rigth{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+}
+
+.Inicial .Rigth .resume_namerole .name{
+    color: black;
+    font-size: 25px;
+}
+
+.Inicial .Rigth .resume_namerole .role{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.Inicial .Rigth .resume_item .resume_title{
+    color: black;
+}
+
+.Inicial .Rigth .resume_data{
+    display: flex;
+}
+
+.Inicial .Rigth .resume_data .year{
+    padding-right: 35px;
+    width: 115px;
+    position: relative;
+}
+
+.Inicial .Rigth .resume_data .content{
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100% - 115px);
+}
+
+.Inicial .Rigth .resume_data .year:before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #2025ed;
+    border-radius: 50%;
+}
+
+.Inicial .Rigth .resume_data .year:after{
+    content: " ";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #0175b2;  
+}
+
+.Inicial .Rigth .resume_data:last-child .year:after{
+    display: none;
+}
+
+.Inicial .Rigth .resume_interests .resume_info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;   
+}
+
+.Inicial .Rigth .resume_interests .interests .int_data{
+    font-size: 12px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 80px){
+    .Inicial .Rigth .resume_namerole{
+        display: none;
+    }
+    .Inicial .Left .resume_namerole{
+        display: block;
+    }
+    .Inicial{
+        width: 95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .Inicial .Left,
+    .Inicial .Rigth{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px){
+    .Inicial .Rigth{
+        padding: 20px 30px;
+    }
+    .Inicial .Rigth .resume_data{
+        flex-direction: column;
+    }
+    .Inicial .Rigth .resume_data .year{
+        padding: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        color: #0175b2;
+    }
+    .Inicial .Rigth .resume_data .year::before,
+    .Inicial .Rigth .resume_data .year::after{
+        display: none;
+    }
+    .Inicial .Rigth .resume_data .content{
+        width: 100%;
+        padding: 0;
+    }
+    .Inicial .Rigth .interests .int_data{
+        font-size: 24px;
+    }
+}
+
+
